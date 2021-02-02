@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/ico" href="fav.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/188c570b55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <title>Portfolio | Jesse Cleary-Budge</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,6 +36,25 @@
           <a class="navbar-brand order-2 order-md-3" href="#">Jesse Cleary-Budge</a>
         </div>
       </nav>
+      <div class="jumbotron container-flex d-flex flex-column vh-100">
+        <div class="container text-center d-flex flex-column align-items-center justify-content-center vh-100">
+          <h1 class="display-1">Hello. I&rsquo;m Jesse.</h1>
+          <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>empathy</strong></span>.</p>
+          <div class="container d-flex justify-content-center my-3">
+            <a href="https://linkedin.com/in/jessecb"><span class="fab fa-linkedin me-4 fa-2x social" aria-hidden="true" title="LinkedIn profile"></span><span class="visually-hidden">LinkedIn profile</span></a>
+            <a href="https://github.com/jesse-online"><span class="fab fa-github-square me-4 fa-2x social" aria-hidden="true" title="GitHub profile"></span><span class="visually-hidden">GitHub profile</span></a>
+            <a href="mailto:jessecb@hey.com"><span class="fas fa-envelope-square fa-2x social" aria-hidden="true" title="Send me an email"></span><span class="visually-hidden">Send me an email</span></a>
+          </div>
+          <div class="container d-flex flex-column align-items-center justify-content-end">
+            <span class="fas fa-cat fa-2x d-block" aria-hidden="true"></span>
+            <a href="#about"><button class="btn btn-lg btn-outline-secondary">Learn more</button></a>
+            <span class="fas fa-chevron-down mt-3"></span>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+        
     <script type="module">
         import { Collapse } from './bootstrap/js/index.esm.js'
         
