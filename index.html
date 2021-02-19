@@ -12,7 +12,7 @@
     <title>Portfolio | Jesse Cleary-Budge</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,32 +35,86 @@
           </div>
           <a class="navbar-brand order-2 order-md-3" href="#">Jesse Cleary-Budge</a>
         </div>
-      </nav>
-      <div class="jumbotron container-flex d-flex flex-column vh-100">
-        <div class="container text-center d-flex flex-column align-items-center justify-content-center vh-100">
-          <h1 class="display-1">Hello. I&rsquo;m Jesse.</h1>
-          <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>empathy</strong></span>.</p>
-          <div class="container d-flex justify-content-center my-3">
-            <a href="https://linkedin.com/in/jessecb"><span class="fab fa-linkedin me-4 fa-2x social" aria-hidden="true" title="LinkedIn profile"></span><span class="visually-hidden">LinkedIn profile</span></a>
-            <a href="https://github.com/jesse-online"><span class="fab fa-github-square me-4 fa-2x social" aria-hidden="true" title="GitHub profile"></span><span class="visually-hidden">GitHub profile</span></a>
-            <a href="mailto:jessecb@hey.com"><span class="fas fa-envelope-square fa-2x social" aria-hidden="true" title="Send me an email"></span><span class="visually-hidden">Send me an email</span></a>
-          </div>
-          <div class="container d-flex flex-column align-items-center justify-content-end">
+  </nav>
+  <!-- #home -->
+  <section id="home" class="container-flex d-flex flex-column vh-100">
+    <!-- Main .container -->  
+    <div class="container text-center d-flex flex-column align-items-center vh-100">
+      <!-- Title .container -->
+      <div class="container d-flex flex-column justify-content-end h-50 mt-7">
+            <h1 class="display-1 my-4">Hello. I&rsquo;m Jesse.</h1>
+            <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>empathy</strong></span>.</p>
+            <div class="container d-flex justify-content-center">
+              <a href="https://linkedin.com/in/jessecb"><span class="fab fa-linkedin me-4 fa-2x social" aria-hidden="true" title="LinkedIn profile"></span><span class="visually-hidden">LinkedIn profile</span></a>
+              <a href="https://github.com/jesse-online"><span class="fab fa-github-square me-4 fa-2x social" aria-hidden="true" title="GitHub profile"></span><span class="visually-hidden">GitHub profile</span></a>
+              <a href="mailto:jessecb@hey.com"><span class="fas fa-envelope-square fa-2x social" aria-hidden="true" title="Send me an email"></span><span class="visually-hidden">Send me an email</span></a>
+            </div>
+      </div> <!-- /Title .container -->
+      <!-- Call to action .container -->
+      <div class="container d-flex flex-column align-items-center justify-content-end h-50">
             <span class="fas fa-cat fa-2x d-block" aria-hidden="true"></span>
-            <a href="#about"><button class="btn btn-lg btn-outline-secondary">Learn more</button></a>
+            <a href="#about" class="btn btn-lg btn-secondary" role="button">Learn more</a>
             <span class="fas fa-chevron-down mt-3"></span>
+      </div> <!-- /Call to action .container -->
+    </div> <!-- /Main .container -->
+  </section> <!-- /#home -->
+  <section id="about" class="container-flex">
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-10 col-sm-8 mx-auto">
+          <h2 class="display-2 text-center my-5">About Jesse</h2>
+        </div>
+      </div>
+      <div class="row justify-content-start">
+        <div class="col-10 col-md-6 my-3 my-md-0 mx-auto mx-md-0 pe-md-3 px-0">
+          <img class="img-fluid" src="img/recitation_square.jpg" alt="Black and white portrait of Jesse at a mic">
+        </div>
+        <div class="col-10 col-md-6 col-lg-5 my-3 my-md-0 mx-auto px-3 py-0 fs-6">
+          <p class="text-left my-md-0"><p>For me, web development means using code to bring ideas to life &ndash; and on this journey, I get to solve puzzles. I <em>love</em> solving puzzles.</p>
+          <p>Web development gets my brain moving like few things do. I&rsquo;ve found that the shower and long walks are when puzzle pieces fit themselves together in my mind, whether it&rsquo;s aligning components just right in adjacent flex containers or creating the perfect condition inside that oh-so-efficient JavaScript loop.</p>
+          <p>I&rsquo;ll race to my notepad and scribble feverishly &ndash; it&rsquo;s like my whole body knows what to do and can&rsquo;t wait to get it down. When I sit down to code, I get to put my creative idea into action, a supremely satisfying experience. </p>
+        </div>
+      </div>
+      <div class="row mt-5 mx-auto">
+        <h3 class="text-center">Values</h3>
+        <p class="text-left mt-3 mb-5 mx-auto p-0 col-8">In my work, I am grounded in my values. This means they inform my work and act as a guiding light wherever there is ambiguity. Here are a few of my most important values:</p>
+        <div class="col-5 col-md-5 px-0">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-integrity-list" data-bs-toggle="list" href="#list-integrity" role="tab" aria-controls="integrity">Integrity</a>
+            <a class="list-group-item list-group-item-action" id="list-accessibility-list" data-bs-toggle="list" href="#list-accessibility" role="tab" aria-controls="accessibility">Accessibility</a>
+            <a class="list-group-item list-group-item-action" id="list-simplicity-list" data-bs-toggle="list" href="#list-simplicity" role="tab" aria-controls="simplicity">Simplicity</a>
+            <a class="list-group-item list-group-item-action" id="list-joy-list" data-bs-toggle="list" href="#list-joy" role="tab" aria-controls="joy">Joy</a>
           </div>
         </div>
-        
+        <div class="col-5 col-md-7 ps-md-5">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-integrity" role="tabpanel" aria-labelledby="list-integrity-list">
+              <p>Integrity means telling the truth even when it's hard. That starts with being honest with myself and asking questions like these:</p> 
+              <ul>
+                <li>What is truly possible here?</li>
+                <li>What can I deliver as a developer?</li>
+                <li>Do I need to ask for help?</li>
+              </ul>
+              <p>To answer these questions, I take a breath, get honest and then take the right action.</p>
+            
+            </div>
+            <div class="tab-pane fade" id="list-accessibility" role="tabpanel" aria-labelledby="list-accessibility-list">2...</div>
+            <div class="tab-pane fade" id="list-simplicity" role="tabpanel" aria-labelledby="list-simplicity-list">3...</div>
+            <div class="tab-pane fade" id="list-joy" role="tabpanel" aria-labelledby="list-joy-list">4...</div>
+          </div>
+        </div>
       </div>
-      </div>
-        
-    <script type="module">
-        import { Collapse } from './bootstrap/js/index.esm.js'
-        
-        Array.from(document.querySelectorAll('.collapse'))
-            .forEach(collapseNode => new Collapse(collapseNode))
-    </script>
-    <script src="js/app.js"></script>
+    </div>
+  </section> <!-- /#about -->
+  <script type="module">
+    import { Collapse, Tab } from './bootstrap/js/index.esm.js'
+      
+    Array.from(document.querySelectorAll('.collapse'))
+      .forEach(collapseNode => new Collapse(collapseNode))
+    
+    Array.from(document.querySelectorAll('.tab'))
+      .forEach(tabNode => new Tab(tabNode))
+  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>

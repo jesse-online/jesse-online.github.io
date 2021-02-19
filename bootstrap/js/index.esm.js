@@ -5,6 +5,8 @@
  * --------------------------------------------------------------------------
  */
 import Collapse from '/bootstrap/js/src/collapse.js'
+import Tab from '/bootstrap/js/src/tab.js'
+import ScrollSpy from '/bootstrap/js/src/scrollspy.js'
 
 // import Alert from '/bootstrap/js/src/alert'
 // import Button from '/src/button'
@@ -13,13 +15,13 @@ import Collapse from '/bootstrap/js/src/collapse.js'
 // import Dropdown from '/src/dropdown'
 // import Modal from '/src/modal'
 // import Popover from '/src/popover'
-// import ScrollSpy from '/src/scrollspy'
-// import Tab from '/src/tab'
 // import Toast from '/src/toast'
 // import Tooltip from '/src/tooltip'
 
 export {
   Collapse,
+  ScrollSpy,
+  Tab
   
   // Alert,
   // Button,
@@ -28,8 +30,6 @@ export {
   // Dropdown,
   // Modal,
   // Popover,
-  // ScrollSpy,
-  // Tab,
   // Toast,
   // Tooltip
 }
