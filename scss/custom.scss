@@ -73,3 +73,36 @@ a .social {
         box-shadow: none;
     }
 }
+
+.card {
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--html { 
+            background: url(../img/ico/html5.svg);
+        }
+
+        &--css {
+            background: url(../img/ico/css3.svg);
+        }
+
+        &--sass {
+            background: url(../img/ico/sass.svg);
+        }
+
+        &--js {
+            background: url(../img/ico/javascript.svg);
+        }
+
+        &--bootstrap {
+            background: url(../img/ico/bootstrap.svg);
+        }
+
+    }
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head profile="http://www.w3.org/2005/10/profile">
+  <head>
+    <!-- profile="http://www.w3.org/2005/10/profile" -->
     <link rel="icon" type="image/ico" href="fav.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,8 @@
     <link rel="stylesheet" href="css/custom.css">
     <title>Portfolio | Jesse Cleary-Budge</title>
 </head>
-<body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="main-nav" data-bs-offset="0">
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top scrollspy">
         <div class="container-fluid">
           <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,7 +45,7 @@
       <div class="container d-flex flex-column justify-content-end h-50 mt-7">
             <h1 class="display-1 my-4">Hello. I&rsquo;m Jesse.</h1>
             <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>empathy</strong></span>.</p>
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex justify-content-center mt-3">
               <a href="https://linkedin.com/in/jessecb"><span class="fab fa-linkedin me-4 fa-2x social" aria-hidden="true" title="LinkedIn profile"></span><span class="visually-hidden">LinkedIn profile</span></a>
               <a href="https://github.com/jesse-online"><span class="fab fa-github-square me-4 fa-2x social" aria-hidden="true" title="GitHub profile"></span><span class="visually-hidden">GitHub profile</span></a>
               <a href="mailto:jessecb@hey.com"><span class="fas fa-envelope-square fa-2x social" aria-hidden="true" title="Send me an email"></span><span class="visually-hidden">Send me an email</span></a>
@@ -69,51 +70,179 @@
         <div class="col-10 col-md-6 my-3 my-md-0 mx-auto mx-md-0 pe-md-3 px-0">
           <img class="img-fluid" src="img/recitation_square.jpg" alt="Black and white portrait of Jesse at a mic">
         </div>
-        <div class="col-10 col-md-6 col-lg-5 my-3 my-md-0 mx-auto px-3 py-0 fs-6">
+        <div class="col-10 col-md-6 col-lg-4 my-3 my-md-0 mx-auto px-3 py-0 fs-6">
           <p class="text-left my-md-0"><p>For me, web development means using code to bring ideas to life &ndash; and on this journey, I get to solve puzzles. I <em>love</em> solving puzzles.</p>
-          <p>Web development gets my brain moving like few things do. I&rsquo;ve found that the shower and long walks are when puzzle pieces fit themselves together in my mind, whether it&rsquo;s aligning components just right in adjacent flex containers or creating the perfect condition inside that oh-so-efficient JavaScript loop.</p>
-          <p>I&rsquo;ll race to my notepad and scribble feverishly &ndash; it&rsquo;s like my whole body knows what to do and can&rsquo;t wait to get it down. When I sit down to code, I get to put my creative idea into action, a supremely satisfying experience. </p>
+          <!-- <p>Web development gets my brain moving like few things do. I&rsquo;ve found that the shower and long walks are when puzzle pieces fit themselves together in my mind, whether it&rsquo;s aligning components just right in adjacent flex containers or creating the perfect condition inside that oh-so-efficient JavaScript loop.</p> -->
+          <p>When an idea strikes, I&rsquo;ll race to my notepad and scribble feverishly &ndash; it&rsquo;s like my whole body knows what to do and can&rsquo;t wait to get it down. When I sit down to code, I get to put my creative idea into action, a supremely satisfying experience. </p>
         </div>
       </div>
       <div class="row mt-5 mx-auto">
         <h3 class="text-center">Values</h3>
-        <p class="text-left mt-3 mb-5 mx-auto p-0 col-8">In my work, I am grounded in my values. This means they inform my work and act as a guiding light wherever there is ambiguity. Here are a few of my most important values:</p>
-        <div class="col-5 col-md-5 px-0">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-integrity-list" data-bs-toggle="list" href="#list-integrity" role="tab" aria-controls="integrity">Integrity</a>
-            <a class="list-group-item list-group-item-action" id="list-accessibility-list" data-bs-toggle="list" href="#list-accessibility" role="tab" aria-controls="accessibility">Accessibility</a>
-            <a class="list-group-item list-group-item-action" id="list-simplicity-list" data-bs-toggle="list" href="#list-simplicity" role="tab" aria-controls="simplicity">Simplicity</a>
-            <a class="list-group-item list-group-item-action" id="list-joy-list" data-bs-toggle="list" href="#list-joy" role="tab" aria-controls="joy">Joy</a>
-          </div>
+        <div class="col-10 col-md-6 mx-auto">
+          <p class="text-left mt-3 mb-5 mx-auto p-0">In my work, I am grounded in my values. This means they inform my work and act as a guiding light wherever there is ambiguity. Here are a few of my most important values:</p>
         </div>
-        <div class="col-5 col-md-7 ps-md-5">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-integrity" role="tabpanel" aria-labelledby="list-integrity-list">
-              <p>Integrity means telling the truth even when it's hard. That starts with being honest with myself and asking questions like these:</p> 
-              <ul>
-                <li>What is truly possible here?</li>
-                <li>What can I deliver as a developer?</li>
-                <li>Do I need to ask for help?</li>
-              </ul>
-              <p>To answer these questions, I take a breath, get honest and then take the right action.</p>
-            
+        <div class="col-10 mx-auto">
+          <div class="accordion" id="accordion-values">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Integrity
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-values">
+                <div class="accordion-body">
+                  <p>Integrity means telling the truth even when it's hard. That starts with being honest with myself and asking questions like these:</p> 
+                  <ul>
+                    <li>What is truly possible here?</li>
+                    <li>What can I deliver as a developer?</li>
+                    <li>Do I need to ask for help?</li>
+                  </ul>
+                  <p>To answer these questions, I take a breath, get honest and then take the right action.</p>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane fade" id="list-accessibility" role="tabpanel" aria-labelledby="list-accessibility-list">2...</div>
-            <div class="tab-pane fade" id="list-simplicity" role="tabpanel" aria-labelledby="list-simplicity-list">3...</div>
-            <div class="tab-pane fade" id="list-joy" role="tabpanel" aria-labelledby="list-joy-list">4...</div>
-          </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accessibility
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-values">
+                <div class="accordion-body">
+                  <p>It's important that everyone be able to access all websites, regardless of ability or disability. I take this seriously in my work.</p>
+                  <p>I do the research to stay abreast of the lateset accessibility developments and incorporate them into my sites. Additionally, I test my sites with a screenreader (NVDA) to ensure they're navigable using assistive technologies.</p>
+                  <p>Do you see room for improvement on this site? I'm always open to feedback. Use the <a href="#contact">contact form</a> below to send me a message.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Joy
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-values">
+                <div class="accordion-body">
+                  <p>As I&rsquo;ve grown as a person, I&rsquo;ve come to see how joy can permeate everything we do &ndash; and create the opportunity for connection.</p>
+                  <p>Joy is often in the details, be it a satisfying animation or a playful accent color. It says, &ldquo;Hey you. I see you. I care about your experience. And I&rsquo;d love to bring a smile to your face.&rdquo;</p>
+                </div>
+              </div>
+            </div>
+          </div> <!-- /.accordion -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section> <!-- /.section /#about -->
+
+  <section id="projects" class="container-flex">
+    <div class="container my-3">
+      <h2 class="display-2 text-center my-5">Projects</h2>
+      <p class="text-center mb-5">Peruse the projects I've created so far.</p>
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-5 mb-3">
+          <div class="card">
+            <img src="https://placeimg.com/200/100/tech" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-body d-flex justify-content-evenly">
+              <a href="#" class="btn btn-primary">See demo</a>
+              <a href="#" class="btn btn-secondary">GitHub repo</a>
+            </div>
+            <div class="card-footer d-flex justify-content-start">
+              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
+              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
+            </div>
+          </div> <!-- /.card -->
+        </div> <!-- /.col -->
+        <div class="col-10 col-md-5 mb-3">
+          <div class="card">
+            <img src="https://placeimg.com/200/100/tech" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-body d-flex justify-content-evenly">
+              <a href="#" class="btn btn-primary">See demo</a>
+              <a href="#" class="btn btn-secondary">View code</a>
+            </div>
+            <div class="card-footer d-flex justify-content-start">
+              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
+              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
+            </div>
+          </div> <!-- /.card -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-5 mb-3">
+          <div class="card">
+            <img src="https://placeimg.com/200/100/tech" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-body d-flex justify-content-evenly">
+              <a href="#" class="btn btn-primary">See demo</a>
+              <a href="#" class="btn btn-secondary">View code</a>
+            </div>
+            <div class="card-footer d-flex justify-content-start">
+              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
+              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
+            </div>
+          </div> <!-- /.card -->
+        </div> <!-- /.col -->
+        <div class="col-10 col-md-5 mb-3">
+          <div class="card">
+            <img src="https://placeimg.com/200/100/tech" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-body d-flex justify-content-evenly">
+              <a href="#" class="btn btn-primary">Visit site</a>
+              <a href="#" class="btn btn-secondary">View code</a>
+            </div>
+            <div class="card-footer d-flex justify-content-start">
+              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
+              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
+            </div>
+          </div> <!-- /.card -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section> <!-- /#projects -->
+  <section id="contact" class="container-flex">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Are you interested in a quote or in collaborating on a project? Please reach out using the form below!</p>
+      <form class="mb-3" action="mailto:jessecb@hey.com" method="post" enctype="text/plain">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name*</label>
+          <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+          <div id="nameHelp" class="form-text">First and last name</div>
         </div>
-      </div>
-    </div>
-  </section> <!-- /#about -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email*</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">I'll respond to this address.</div>
+        </div>
+        <div class="mb-3 d-flex flex-column">
+          <label class="form-label" for="message">Message*</label>
+          <textarea class="form-input" id="message" placeholder="How can I help you?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" value="Send">Send</button>
+      </form>
+    </div> <!-- /.container -->
+  </section> <!-- /#contact -->
   <script type="module">
-    import { Collapse, Tab } from './bootstrap/js/index.esm.js'
+    import { Collapse, ScrollSpy } from './bootstrap/js/index.esm.js'
       
     Array.from(document.querySelectorAll('.collapse'))
       .forEach(collapseNode => new Collapse(collapseNode))
-    
-    Array.from(document.querySelectorAll('.tab'))
-      .forEach(tabNode => new Tab(tabNode))
+
+    Array.from(document.querySelectorAll('.scrollspy'))
+      .forEach(scrollspyNode => new ScrollSpy(scrollspyNode))
   </script>
   <script src="js/app.js"></script>
 </body>

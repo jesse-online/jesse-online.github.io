@@ -11572,4 +11572,28 @@ a .social:visited {
   box-shadow: none;
 }
 
+.card__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1rem;
+}
+.card__icon:last-child {
+  margin-right: 0;
+}
+.card__icon--html {
+  background: url(../img/ico/html5.svg);
+}
+.card__icon--css {
+  background: url(../img/ico/css3.svg);
+}
+.card__icon--sass {
+  background: url(../img/ico/sass.svg);
+}
+.card__icon--js {
+  background: url(../img/ico/javascript.svg);
+}
+.card__icon--bootstrap {
+  background: url(../img/ico/bootstrap.svg);
+}
+
 /*# sourceMappingURL=custom.css.map */
