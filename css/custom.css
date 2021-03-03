@@ -11572,13 +11572,45 @@ a .social:visited {
   box-shadow: none;
 }
 
+.card {
+  overflow: hidden;
+}
+.card__inset-shadow {
+  position: relative;
+}
+.card__inset-shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.2s ease;
+}
+.card__inset-shadow:hover::after {
+  box-shadow: none;
+}
+.card__screenshot {
+  transition: transform 0.2s ease;
+}
+.card__screenshot:hover {
+  transform: scale(1.05);
+}
 .card__icon {
   width: 24px;
   height: 24px;
   margin-right: 1rem;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.3);
 }
 .card__icon:last-child {
   margin-right: 0;
+}
+.card__icon:hover {
+  box-shadow: none;
+  cursor: help;
 }
 .card__icon--html {
   background: url(../img/ico/html5.svg);
@@ -11590,7 +11622,7 @@ a .social:visited {
   background: url(../img/ico/sass.svg);
 }
 .card__icon--js {
-  background: url(../img/ico/javascript.svg);
+  background: #F7DF1E url(../img/ico/javascript.svg);
 }
 .card__icon--bootstrap {
   background: url(../img/ico/bootstrap.svg);
