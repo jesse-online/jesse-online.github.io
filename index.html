@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <title>Portfolio | Jesse Cleary-Budge</title>
 </head>
-<body class="position-relative" data-bs-spy="scroll" data-bs-target="main-nav" data-bs-offset="0">
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="5">
   <nav id="main-nav" class="navbar navbar-expand-md navbar-light bg-light fixed-top scrollspy">
         <div class="container-fluid">
           <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
               </li>
             </ul>
           </div>
-          <a class="navbar-brand order-2 order-md-3" href="#">Jesse Cleary-Budge</a>
+          <a class="navbar-brand order-2 order-md-3" href=".">Jesse Cleary-Budge</a>
         </div>
   </nav>
   <!-- #home -->
@@ -44,7 +44,7 @@
       <!-- Title .container -->
       <div class="container d-flex flex-column justify-content-end h-50 mt-7">
             <h1 class="display-1 my-4">Hello. I&rsquo;m Jesse.</h1>
-            <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>empathy</strong></span>.</p>
+            <p class="lead fs-3">A front-end web developer with <span class="d-inline-block animate__animated animate__pulse animate__repeat-2 animate__delay-1s secondary"><strong>values</strong></span>.</p>
             <div class="container d-flex justify-content-center mt-3">
               <a href="https://linkedin.com/in/jessecb"><span class="fab fa-linkedin me-4 fa-2x social" aria-hidden="true" title="LinkedIn profile"></span><span class="visually-hidden">LinkedIn profile</span></a>
               <a href="https://github.com/jesse-online"><span class="fab fa-github-square me-4 fa-2x social" aria-hidden="true" title="GitHub profile"></span><span class="visually-hidden">GitHub profile</span></a>
@@ -59,36 +59,35 @@
       </div> <!-- /Call to action .container -->
     </div> <!-- /Main .container -->
   </section> <!-- /#home -->
-  <section id="about" class="container-flex">
+  <section id="about" class="container-flex my-7">
     <div class="container my-3">
       <div class="row">
         <div class="col-10 col-sm-8 mx-auto">
           <h2 class="display-2 text-center my-5">About Jesse</h2>
         </div>
       </div>
-      <div class="row justify-content-start">
-        <div class="col-10 col-md-6 my-3 my-md-0 mx-auto mx-md-0 pe-md-3 px-0">
+      <div class="row justify-content-evenly">
+        <div class="col-11 col-md-5 col-lg-4 my-3 my-md-0 mx-md-0 pe-md-3 ps-lg-3 px-0">
           <img class="img-fluid" src="img/recitation_square.jpg" alt="Black and white portrait of Jesse at a mic">
         </div>
-        <div class="col-10 col-md-6 col-lg-4 my-3 my-md-0 mx-auto px-3 py-0 fs-6">
-          <p class="text-left my-md-0"><p>For me, web development means using code to bring ideas to life &ndash; and on this journey, I get to solve puzzles. I <em>love</em> solving puzzles.</p>
-          <!-- <p>Web development gets my brain moving like few things do. I&rsquo;ve found that the shower and long walks are when puzzle pieces fit themselves together in my mind, whether it&rsquo;s aligning components just right in adjacent flex containers or creating the perfect condition inside that oh-so-efficient JavaScript loop.</p> -->
+        <div class="col-12 col-md-5 col-lg-4 my-3 my-md-0 px-3 py-0">
+          <p>For me, web development means using code to bring ideas to life &ndash; and on this journey, I get to solve puzzles. I <em>love</em> solving puzzles.</p>
           <p>When an idea strikes, I&rsquo;ll race to my notepad and scribble feverishly &ndash; it&rsquo;s like my whole body knows what to do and can&rsquo;t <em>wait</em> to get it down. When I sit down to code, I get to put my creative idea into action, a supremely satisfying experience. </p>
         </div>
       </div>
       <div class="row mt-5 mx-auto">
         <h3 class="text-center">Values</h3>
-        <div class="col-10 col-md-6 mx-auto">
+        <div class="col-12 col-md-8 mx-auto">
           <p class="text-left mt-3 mb-5 mx-auto p-0">In my work, I am grounded in my values. This means they inform my work and act as a guiding light wherever there is ambiguity. Here are a few of my most important values:</p>
         </div>
-        <div class="col-10 mx-auto">
+        <div class="col-12 col-md-8 mx-auto">
           <div class="accordion" id="accordion-values">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
+              <h4 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Integrity
+                  <span class="fs-5">Integrity</span>
                 </button>
-              </h2>
+              </h4>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-values">
                 <div class="accordion-body">
                   <p>Integrity means telling the truth even when it's hard. That starts with being honest with myself and asking questions like these:</p> 
@@ -104,27 +103,29 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accessibility
+                  <span class="fs-5">Accessibility</span>
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-values">
                 <div class="accordion-body">
-                  <p>It&rsquo;s important that everyone be able to access all websites, regardless of ability or disability. I take this seriously in my work.</p>
+                  <p>All websites need to be accessible to all users, regardless of ability or disability. I take this seriously in my work.</p>
                   <p>I do the research to stay abreast of the latest accessibility developments and incorporate them into my sites. Additionally, I test my sites with a screenreader (NVDA) to ensure they&rsquo;re navigable using assistive technologies.</p>
-                  <p>Do you see room for improvement on this site? I&rsquo;m always open to feedback. Use the <a href="#contact">contact form</a> below to send me a message.</p>
+                  <p>Do you see room for improvement in this site&rsquo;s accessibility? I&rsquo;m always open to feedback. Use the <a href="#contact">contact form</a> below to send me a message.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Joy
+                  <span class="fs-5">Joy</span>
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-values">
                 <div class="accordion-body">
                   <p>As I&rsquo;ve grown as a person, I&rsquo;ve come to see how joy can permeate everything we do &ndash; and create the opportunity for connection.</p>
-                  <p>Joy is often in the details, be it a satisfying animation or a playful accent color. It says, &ldquo;Hey you. I see you. I care about your experience. And I&rsquo;d love to bring a smile to your face.&rdquo;</p>
+                  <p>Joy is often in the details, be it a satisfying animation or a playful accent color. It says, &ldquo;Hey you. I see you. I care about your experience. And I&rsquo;d love to bring a smile to your face.&rdquo;
+                    <span class="fas fa-cat d-inline-block" aria-hidden="true"></span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -134,131 +135,195 @@
     </div> <!-- /.container -->
   </section> <!-- /.section /#about -->
 
-  <section id="projects" class="container-flex">
-    <div class="container my-3">
+  <section id="projects" class="container-flex my-7">
+    <div class="container my-3 py-4">
       <h2 class="display-2 text-center my-5">Projects</h2>
-      <p class="text-center mb-5">Peruse the projects I've created so far.</p>
-      <div class="row justify-content-center">
-        <div class="col-10 col-md-5 mb-3">
+      <p class="text-center mb-5 fs-4">Peruse the projects I've created so far.</p>
+      <div class="row justify-content-center g-3">
+        <div class="col-12 col-md-6 mb-3">
           <div class="card">
-            <div class="card__inset-shadow">
-              <img src="img/screenshots/project_8_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of a searchable employee directory">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">API-based employee directory</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://jesse-online.github.io/fe-techdegree-project-8">
+              <div class="card__inset-shadow">
+                <img src="img/screenshots/project_8_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of a searchable employee directory">
+              </div>
+            </a>
+            <div class="card-body p-5">
+              <h5 class="card-title fw-bold fs-4 py-3">API-based employee directory</h5>
+              <p class="card-text">This site pulls in sample employee data from a publicly available API using <code>fetch()</code>. Clicking an employee card brings up a modal view. Here are some challenges I&nbsp;encountered in this project:</p>
+                <ul class="card-text">
+                  <li class="mb-3">Limiting the employees displayed in the modal view to allow switching only between employees matching the search criteria</li>
+                  <li class="mb-3">Formatting employee data to fit three different viewport widths (emails can be long!)</li>
+                  <li class="mb-3">Paring down the <code>fetch()</code> call and using <code>try{}</code> and <code>catch{}</code> for the first time</li>
+                </ul>
             </div>
             <div class="card-body d-flex justify-content-evenly">
-              <a href="https://jesse-online.github.io/fe-techdegree-project-8" class="btn btn-light">See demo</a>
-              <a href="https://github.com/jesse-online/fe-techdegree-project-8" class="btn btn-light">GitHub repo</a>
+              <a href="https://jesse-online.github.io/fe-techdegree-project-8" class="btn btn-secondary btn-lg">See demo</a>
+              <a href="https://github.com/jesse-online/fe-techdegree-project-8" class="btn btn-dark btn-lg">View code</a>
             </div>
             <div class="card-footer d-flex justify-content-start">
-              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
-              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
-              <span class="card__icon card__icon--sass" title="SASS" alt="SASS logo"></span>
-              <span class="card__icon card__icon--js" title="JavaScript" alt="JavaScript logo"></span>
+              <span class="card__icon card__icon--html" title="HTML 5"></span>
+              <span class="card__icon card__icon--css" title="CSS 3"></span>
+              <span class="card__icon card__icon--sass" title="SASS"></span>
+              <span class="card__icon card__icon--js" title="JavaScript"></span>
             </div>
           </div> <!-- /.card -->
         </div> <!-- /.col -->
-        <div class="col-10 col-md-5 mb-3">
+        <div class="col-12 col-md-6 mb-3 mt-0 mt-md-3">
           <div class="card">
-            <div class="card__inset-shadow">
-              <img src="img/screenshots/project_7_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of an online dashboard">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Dashboard with alerts</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://jesse-online.github.io/fe-techdegree-project-7">
+              <div class="card__inset-shadow">
+                  <img src="img/screenshots/project_7_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of an online dashboard">
+              </div>
+            </a>
+            <div class="card-body p-5">
+              <h5 class="card-title fw-bold fs-4 py-3">Dashboard with alerts</h5>
+              <p class="card-text">This site presents a customizable dashboard with an interactive chart. I used the Chart.js plug-in to display data in custom line, bar and donut charts. Some challenges I faced:</p>
+                <ul class="card-text">
+                  <li class="mb-3">Learning a new plug-in can be hard &ndash; especially when documentation is spotty</li>
+                  <li class="mb-3"><code>relative</code> and <code>absolute</code> positioning were critical here for visual markers &ndash; no cheating was allowed &#128521;</li>
+                  <li class="mb-3">Styling nested CSS <code>grid</code>s was challenging, especially when accounting for responsiveness in this mobile-first design</li>
+                </ul>
+
+              
             </div>
             <div class="card-body d-flex justify-content-evenly">
-              <a href="https://jesse-online.github.io/fe-techdegree-project-7" class="btn btn-light">See demo</a>
-              <a href="https://github.com/jesse-online/fe-techdegree-project-7" class="btn btn-light">View code</a>
+              <a href="https://jesse-online.github.io/fe-techdegree-project-7" class="btn btn-secondary btn-lg">See demo</a>
+              <a href="https://github.com/jesse-online/fe-techdegree-project-7" class="btn btn-dark btn-lg">View code</a>
             </div>
             <div class="card-footer d-flex justify-content-start">
-              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
-              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
-              <span class="card__icon card__icon--sass" title="SASS" alt="SASS logo"></span>
-              <span class="card__icon card__icon--js" title="JavaScript" alt="JavaScript logo"></span>
+              <span class="card__icon card__icon--html" title="HTML 5"></span>
+              <span class="card__icon card__icon--css" title="CSS 3"></span>
+              <span class="card__icon card__icon--sass" title="SASS"></span>
+              <span class="card__icon card__icon--js" title="JavaScript"></span>
             </div>
           </div> <!-- /.card -->
         </div> <!-- /.col -->
       </div> <!-- /.row -->
-      <div class="row justify-content-center">
-        <div class="col-10 col-md-5 mb-3">
+      <div class="row justify-content-center g-3">
+        <div class="col-12 col-md-6 mb-3">
           <div class="card">
-            <div class="card__inset-shadow">
-              <img src="img/screenshots/project_6_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of an online word-guessing game">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Word-guessing game</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://jesse-online.github.io/fe-techdegree-project-6">
+              <div class="card__inset-shadow">
+                <img src="img/screenshots/project_6_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of an online word-guessing game">
+              </div>
+            </a>
+            <div class="card-body p-5">
+              <h5 class="card-title fw-bold fs-4 py-3">Word-guessing game</h5>
+              <p class="card-text">
+                This site is a JavaScript-based game that presents the player with a randomly selected phrase. The player must then choose letters &ndash; hangman style &ndash; to guess the words in the phrase.
+              </p>
+              <p class="card-text">
+                If the player misses too many letters, the game ends and the player can reset to try again.
+              </p>
+              <p class="card-text">
+                Some challenges I faced in this fun project:
+              </p>
+                <ul class="card-text">
+                  <li class="mb-3">Crafting reusable JS that could be called on load and on reset</li>
+                  <li class="mb-3">Converting strings to arrays of letters and handling spaces</li>
+                  <li class="mb-3">Using loops to check for matches</li>
+                </ul>
+              
+              <p class="text-muted"><small>Note: This project is optimized for desktop displays only.</small></p>
             </div>
             <div class="card-body d-flex justify-content-evenly">
-              <a href="https://jesse-online.github.io/fe-techdegree-project-6" class="btn btn-light">See demo</a>
-              <a href="https://github.com/jesse-online/fe-techdegree-project-6" class="btn btn-light">View code</a>
+              <a href="https://jesse-online.github.io/fe-techdegree-project-6" class="btn btn-secondary btn-lg">See demo</a>
+              <a href="https://github.com/jesse-online/fe-techdegree-project-6" class="btn btn-dark btn-lg">View code</a>
             </div>
             <div class="card-footer d-flex justify-content-start">
-              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
-              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
-              <span class="card__icon card__icon--sass" title="SASS" alt="SASS logo"></span>
-              <span class="card__icon card__icon--js" title="JavaScript" alt="JavaScript logo"></span>
+              <span class="card__icon card__icon--html" title="HTML 5"></span>
+              <span class="card__icon card__icon--css" title="CSS 3"></span>
+              <span class="card__icon card__icon--sass" title="SASS"></span>
+              <span class="card__icon card__icon--js" title="JavaScript"></span>
             </div>
           </div> <!-- /.card -->
         </div> <!-- /.col -->
-        <div class="col-10 col-md-5 mb-3">
+        <div class="col-12 col-md-6 mb-3 mt-0 mt-md-3">
           <div class="card">
-            <div class="card__inset-shadow">
-              <img src="img/screenshots/project_5_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of a searchable image gallery">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Searchable image gallery</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://jesse-online.github.io/fe-techdegree-project-5">
+              <div class="card__inset-shadow">
+                <img src="img/screenshots/project_5_ss_400x200.jpg" class="card-img-top card__screenshot" alt="Screenshot of a searchable image gallery">
+              </div>
+            </a>
+            <div class="card-body p-5">
+              <h5 class="card-title fw-bold fs-4 py-3">Searchable image gallery</h5>
+              <p class="card-text">
+                This site presents the user with a responsive grid of images. The user can search for terms in each image&rsquo;s title and caption.
+              </p>
+              <p class="card-text">
+                When the user clicks an image, the Lightbox plug-in displays a large view of the image in a full-screen modal window, which also provides navigation between photos.
+              </p>
+              <p class="card-text">
+                Some challenges I encountered in this project:
+              </p>
+              <ul class="card-text">
+                <li class="mb-3">Implementing the Lightbox plug-in (my first JS plug-in 🥰)</li>
+                <li class="mb-3">Building a JS search function from scratch</li>
+                <li class="mb-3">Ensuring media query-free responsiveness with CSS Grid</li>
+              </ul>
+              
             </div>
             <div class="card-body d-flex justify-content-evenly">
-              <a href="https://jesse-online.github.io/fe-techdegree-project-5" class="btn btn-light">See demo</a>
-              <a href="https://github.com/jesse-online/fe-techdegree-project-5" class="btn btn-light">View code</a>
+              <a href="https://jesse-online.github.io/fe-techdegree-project-5" class="btn btn-secondary btn-lg">See demo</a>
+              <a href="https://github.com/jesse-online/fe-techdegree-project-5" class="btn btn-dark btn-lg">View code</a>
             </div>
             <div class="card-footer d-flex justify-content-start">
-              <span class="card__icon card__icon--html" title="HTML 5" alt="HTML 5 logo"></span>
-              <span class="card__icon card__icon--css" title="CSS 3" alt="CSS 3 logo"></span>
-              <span class="card__icon card__icon--sass" title="SASS" alt="SASS logo"></span>
-              <span class="card__icon card__icon--js" title="JavaScript" alt="JavaScript logo"></span>
+              <span class="card__icon card__icon--html" title="HTML 5"></span>
+              <span class="card__icon card__icon--css" title="CSS 3"></span>
+              <span class="card__icon card__icon--sass" title="SASS"></span>
+              <span class="card__icon card__icon--js" title="JavaScript"></span>
             </div>
           </div> <!-- /.card -->
         </div> <!-- /.col -->
       </div> <!-- /.row -->
     </div> <!-- /.container -->
   </section> <!-- /#projects -->
-  <section id="contact" class="container-flex">
-    <div class="container d-flex flex-column">
-      <h2 class="my-5 mx-auto">Contact</h2>
-      <p>Are you interested in a quote or in collaborating on a project? Please reach out using the form below!</p>
-      <form class="mb-3" action="" method="post">
-        <div class="mb-3 w-md-25">
-          <label for="name" class="form-label">Name*</label>
-          <input type="text" class="form-control" id="name">
+  <section id="contact" class="container-flex my-7">
+    <div class="container d-flex flex-column align-items-center">
+      <h2 class="display-2 text-center my-5">Contact</h2>
+      <div class="row justify-content-center gx-0">
+        <div class="col-12 col-md-7 px-3 px-sm-0">
+          <p>Are you interested in a quote or in collaborating on a project? Please fill out this form and I&rsquo;ll get back to you shortly:</p>
+          <p class="text-muted"><small>Asterisk (*) indicates a required field.</small></p>
         </div>
-        <div class="mb-3 w-md-25">
-          <label for="email" class="form-label">Email*</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">I'll respond to this address.</div>
-        </div>
-        <div class="mb-3 d-flex flex-column w-md-50">
-          <label class="form-label" for="message">Message*</label>
-          <textarea class="form-input" id="message" placeholder="How can I help you?"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-lg" value="Send">Send</button>
-      </form>
+        <form class="col-12 col-md-7 d-flex flex-column mb-3 mx-auto px-3 px-sm-0">
+          <div class="row">
+            <div class="col-12 mb-4 p-0">
+              <label for="name" class="form-label">Name*</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="col-12 mb-4 p-0">
+              <label for="email" class="form-label">Email*</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">I&rsquo;ll respond to this address.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mb-4 d-flex flex-column p-0">
+              <label class="form-label p-0" for="message">Message*</label>
+              <textarea class="form-control" rows="5" id="message" placeholder="How can I help you?"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-secondary btn-lg" value="Send">Send</button>
+            </div>
+          </div>
+        </form>
+      </div> <!-- /.row -->
     </div> <!-- /.container -->
   </section> <!-- /#contact -->
-  <script type="module">
-    import { Collapse, ScrollSpy } from './bootstrap/js/index.esm.js'
-      
-    Array.from(document.querySelectorAll('.collapse'))
-      .forEach(collapseNode => new Collapse(collapseNode))
-
-    Array.from(document.querySelectorAll('.scrollspy'))
-      .forEach(scrollspyNode => new ScrollSpy(scrollspyNode))
-  </script>
+  <footer class="footer mt-auto p-3 bg-light">
+    <div class="container-flex d-flex justify-content-between align-items-center">
+      <span class="text-muted"><small>&copy; 2021-present</small></span>
+      <span class="fas fa-cat d-inline-block text-muted" aria-hidden="true"></span>
+      <span class="text-muted"><small>Jesse Cleary-Budge</small></span>
+    </div>
+  </footer>
+  <!-- <script type="module">
+    
+  </script> -->
   <script src="js/app.js"></script>
+  <script src="bootstrap/dist/bootstrap.bundle.min.js"></script>
 </body>
 </html>

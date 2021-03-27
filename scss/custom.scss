@@ -1,4 +1,7 @@
 $color-secondary: #F4804A;
+$accordion-button-active-color: $color-secondary;
+$accordion-button-active-bg: #fde4d8;
+$card-height: 100%;
 $navbar-light-active-color: $color-secondary;
 @import "../bootstrap/scss/bootstrap";
 
@@ -21,8 +24,6 @@ strong {
     > .container:first-child {
         background-image: url('../img/blue_crop.JPEG');
         background-size: cover;
-        
-        // box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
 
         .display-1,
         .lead {
@@ -57,13 +58,11 @@ a .social {
     background-color: $color-secondary;
     border-color: $color-secondary;
     color: $gray-900;
-    // box-shadow: inset 0 0 0 1000px rgba(255,255,255,.5);
 
     &:hover {
         background: $color-secondary;
         color: $gray-900;
-        border: 1px solid $gray-900;
-        box-shadow: inset 0 0 0 1000px rgba(255,255,255,.1);
+        border-color: $color-secondary;
     }
 
     &:focus,
@@ -72,6 +71,10 @@ a .social {
         outline: none;
         box-shadow: none;
     }
+}
+
+#projects {
+    background: rgba(114, 171, 178, .5);
 }
 
 .card {
@@ -90,21 +93,16 @@ a .social {
             -webkit-box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);  
             -moz-box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
             box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);
-            // overflow: hidden;
             transition: box-shadow .2s ease;
-        }
-
-        &:hover::after {
-            box-shadow: none;            
         }
     }
 
-    &__screenshot {
-        transition: transform .2s ease;
+    &:hover &__inset-shadow::after {
+        box-shadow: none;            
+    }
 
-        &:hover {
-            transform: scale(1.05);
-        }
+    &:hover &__screenshot {
+        animation: slingshotzoom .4s forwards;
     }
 
     &__icon {
@@ -142,5 +140,15 @@ a .social {
             background: url(../img/ico/bootstrap.svg);
         }
 
+    }
+}
+
+@keyframes slingshotzoom {
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1.01)
     }
 }
