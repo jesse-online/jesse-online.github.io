@@ -11556,6 +11556,10 @@ a .social:visited {
   color: #212529;
 }
 
+.btn-lg, .btn-group-lg > .btn {
+  max-height: 49.403px;
+}
+
 .btn-secondary {
   background-color: #F4804A;
   border-color: #F4804A;
