@@ -286,22 +286,22 @@
           <p>Are you interested in a quote or in collaborating on a project? Please fill out this form and I&rsquo;ll get back to you shortly:</p>
           <p class="text-muted"><small>Asterisk (*) indicates a required field.</small></p>
         </div>
-        <form class="col-12 col-md-7 d-flex flex-column mb-3 mx-auto px-3 px-sm-0">
+        <form class="col-12 col-md-7 d-flex flex-column mb-3 mx-auto px-3 px-sm-0" action="./php/mail.php" method="POST">
           <div class="row">
             <div class="col-12 mb-4 p-0">
               <label for="name" class="form-label">Name*</label>
-              <input type="text" class="form-control" id="name">
+              <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div class="col-12 mb-4 p-0">
               <label for="email" class="form-label">Email*</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" required>
               <div id="emailHelp" class="form-text">I&rsquo;ll respond to this address.</div>
             </div>
           </div>
           <div class="row">
             <div class="col-12 mb-4 d-flex flex-column p-0">
               <label class="form-label p-0" for="message">Message*</label>
-              <textarea class="form-control" rows="5" id="message" placeholder="How can I help you?"></textarea>
+              <textarea class="form-control" rows="5" id="message" placeholder="How can I help you?" name="message" required></textarea>
             </div>
           </div>
           <div class="row">
@@ -320,9 +320,6 @@
       <span class="text-muted"><small>Jesse Cleary-Budge</small></span>
     </div>
   </footer>
-  <!-- <script type="module">
-    
-  </script> -->
   <script src="js/app.js"></script>
   <script src="bootstrap/dist/bootstrap.bundle.min.js"></script>
 </body>
