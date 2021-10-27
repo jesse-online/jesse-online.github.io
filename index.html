@@ -286,7 +286,7 @@
           <p>Are you interested in a quote or in collaborating on a project? Please fill out this form and I&rsquo;ll get back to you shortly:</p>
           <p class="text-muted"><small>Asterisk (*) indicates a required field.</small></p>
         </div>
-        <form class="col-12 col-md-7 d-flex flex-column mb-3 mx-auto px-3 px-sm-0" action="./php/mail.php" method="POST">
+        <form data-netlify="true" name="contact" method="POST" class="col-12 col-md-7 d-flex flex-column mb-3 mx-auto px-3 px-sm-0">
           <div class="row">
             <div class="col-12 mb-4 p-0">
               <label for="name" class="form-label">Name*</label>
@@ -306,7 +306,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <button type="submit" class="btn btn-secondary btn-lg" value="Send">Send</button>
+              <button type="submit" class="btn btn-secondary btn-lg">Send</button>
             </div>
           </div>
         </form>
